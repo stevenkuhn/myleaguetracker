@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyLeagueTracker.Domain.Model.Match">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Maps" Type="MyLeagueTracker.Domain.Model.Map">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.702" Y="0.363" Height="0.182" Width="0.649" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Results" Type="MyLeagueTracker.Domain.Model.MatchResult">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.256" Y="0.05" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAACABAAACAQQAAAAAAAAAAChAAA=</HashCode>
+      <FileName>Model\Match.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Maps" />
+      <Property Name="Results" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLeagueTracker.Domain.Model.MatchResult">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Map" Type="MyLeagueTracker.Domain.Model.Map">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.443" Y="2.653" Height="0.182" Width="0.524" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAAAAAACAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Model\MatchResult.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyLeagueTracker.Domain.Model.Map">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

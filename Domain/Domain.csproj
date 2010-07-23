@@ -8,8 +8,8 @@
     <ProjectGuid>{B9242834-0CB8-4976-8AD9-3B7D25180403}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Model</RootNamespace>
-    <AssemblyName>Model</AssemblyName>
+    <RootNamespace>MyLeagueTracker.Domain</RootNamespace>
+    <AssemblyName>MyLeagueTracker.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Entity.cs" />
+    <Compile Include="Common\IEntity.cs" />
+    <Compile Include="Common\IValueObject.cs" />
+    <Compile Include="Common\ObjectBase.cs" />
+    <Compile Include="Common\ValueObject.cs" />
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\Match.cs" />
+    <Compile Include="Model\MatchResult.cs" />
+    <Compile Include="Model\MatchWinner.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Season.cs" />
+    <Compile Include="Model\Team.cs" />
+    <Compile Include="Model\League.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataTransferObjects\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagrams\Matches.cd" />
+    <None Include="Diagrams\Leagues.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

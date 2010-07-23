@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyLeagueTracker.Domain.Model.League" HideInheritanceLine="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="League" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Seasons" Type="MyLeagueTracker.Domain.Model.Season">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.183" Y="0.039" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Game" Type="MyLeagueTracker.Domain.Model.Game">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.734" Y="0.56" Height="0.182" Width="0.67" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAQAAAAAAAAAAQQAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\League.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Seasons" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLeagueTracker.Domain.Model.Team" HideInheritanceLine="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Team" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Players" Type="MyLeagueTracker.Domain.Model.Player" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="1.5" />
+        <Point X="5.5" Y="1.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.246" Y="0.05" Height="0.182" Width="0.669" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAIAAABAAAAQAAAAgAAAgAAgAQAAAAAA=</HashCode>
+      <FileName>Model\Team.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Players" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLeagueTracker.Domain.Model.Player" HideInheritanceLine="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyLeagueTracker.Domain.Model.Season" HideInheritanceLine="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="Season" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Teams" Type="MyLeagueTracker.Domain.Model.Team">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.734" Y="0.373" Height="0.182" Width="0.649" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Model\Season.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Teams" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLeagueTracker.Domain.Model.Game" HideInheritanceLine="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
