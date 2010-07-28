@@ -5,9 +5,7 @@ using System.Text;
 
 namespace MyLeagueTracker.Domain.Common
 {
-	public interface IEntity
-	{
-	}
+	public interface IEntity { }
 
 	public interface IEntity<T> : IEntity
 	{

@@ -6,7 +6,7 @@ using MyLeagueTracker.Domain.Common;
 
 namespace MyLeagueTracker.Domain.Model
 {
-	public class Season : Entity<Guid>
+	public class Season : Entity<int>
 	{
 		private Season() { }
 

@@ -56,10 +56,7 @@
     <Compile Include="Model\League.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataTransferObjects\" />
-    <Folder Include="Extensions\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Diagrams\Matches.cd" />
     <None Include="Diagrams\Leagues.cd" />

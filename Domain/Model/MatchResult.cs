@@ -6,7 +6,7 @@ using MyLeagueTracker.Domain.Common;
 
 namespace MyLeagueTracker.Domain.Model
 {
-	public class MatchResult : Entity<Guid>
+	public class MatchResult : Entity<int>
 	{
 		public IEnumerable<Player> AwayPlayers { get; private set; }
 
