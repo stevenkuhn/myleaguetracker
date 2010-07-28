@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\DomainSignatureAttribute.cs" />
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Common\IEntity.cs" />
     <Compile Include="Common\IValueObject.cs" />
